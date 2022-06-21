@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		B3AE80312861576B00B2703F /* UIComponentsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B3AE80302861576B00B2703F /* UIComponentsFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3AE803B2861581000B2703F /* Tooltip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AE803A2861581000B2703F /* Tooltip.swift */; };
+		B3AE803F2861632600B2703F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AE803E2861632600B2703F /* Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B3AE802D2861576B00B2703F /* UIComponentsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponentsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3AE80302861576B00B2703F /* UIComponentsFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponentsFramework.h; sourceTree = "<group>"; };
+		B3AE803A2861581000B2703F /* Tooltip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tooltip.swift; sourceTree = "<group>"; };
+		B3AE803E2861632600B2703F /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 			isa = PBXGroup;
 			children = (
 				B3AE80302861576B00B2703F /* UIComponentsFramework.h */,
+				B3AE803A2861581000B2703F /* Tooltip.swift */,
+				B3AE803E2861632600B2703F /* Toast.swift */,
 			);
 			path = UIComponentsFramework;
 			sourceTree = "<group>";
@@ -93,6 +99,7 @@
 				TargetAttributes = {
 					B3AE802C2861576B00B2703F = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -129,6 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3AE803B2861581000B2703F /* Tooltip.swift in Sources */,
+				B3AE803F2861632600B2703F /* Toast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +267,7 @@
 		B3AE80352861576B00B2703F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -278,6 +288,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +297,7 @@
 		B3AE80362861576B00B2703F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
